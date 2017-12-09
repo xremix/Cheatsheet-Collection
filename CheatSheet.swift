@@ -1,7 +1,7 @@
 // Debug in Live Console
 // (lldb) po [myItem.myProperty]
 
-// If let
+// Single Line If let
 if let count = getCount(){
   return count
 }
