@@ -1,3 +1,7 @@
+// Debug in Live Console
+// (lldb) po [myItem.myProperty]
+
+
 // Typecast in For Loop
 for case let item as MyVar in myArray{
     
