@@ -13,14 +13,14 @@ return 0
 ## Typecast in For Loop
 ```Swift
 for case let item as MyVar in myArray{
-
+ // ...
 }
 ```
 
 ## Return Multiple Value Tuple
 ```Swift
 func getTime() -> (Int, Int, Int) {
-  ...
+  // ...
   return ( hour, minute, second)
 }
 
