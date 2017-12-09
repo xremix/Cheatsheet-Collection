@@ -1,6 +1,12 @@
 // Debug in Live Console
 // (lldb) po [myItem.myProperty]
 
+// If let
+if let count = getCount(){
+  return count
+}
+return 0
+
 
 // Typecast in For Loop
 for case let item as MyVar in myArray{
