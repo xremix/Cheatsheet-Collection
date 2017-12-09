@@ -1,26 +1,22 @@
-/* ***************************************** */
-// Debug in Live Console
-/* ***************************************** */
-// (lldb) po [myItem.myProperty]
+## Debug in Live Console
+## (lldb) po [myItem.myProperty]
 
-/* ***************************************** */
-// Single Line If let
-/* ***************************************** */
+## Single Line If let
+```Swift
 if let count = getCount(){
   return count
 }
 return 0
-
-/* ***************************************** */
-// Typecast in For Loop
-/* ***************************************** */
+``` 
+## Typecast in For Loop
+```Swift
 for case let item as MyVar in myArray{
 
 }
+```
 
-/* ***************************************** */
-// Return Multiple Value Tuple
-/* ***************************************** */
+## Return Multiple Value Tuple
+```Swift
 func getTime() -> (Int, Int, Int) {
   ...
   return ( hour, minute, second)
@@ -33,10 +29,10 @@ func getTime() -> (hour: Int, minute: Int,second: Int) {
   let second = 3
   return ( hour, minute, second)
 }
+```
 
-/* ***************************************** */
-// Extended Getter and Setter
-/* ***************************************** */
+## Extended Getter and Setter
+```Swift
 class family {
   var _members:Int = 2
   var members:Int {
@@ -52,17 +48,17 @@ class family {
      }
    }
 }
+```
 
-/* ***************************************** */
-// Measure Time
-/* ***************************************** */
+## Measure Time
+```Swift
 let startTime = CFAbsoluteTimeGetCurrent()
 
 print("Time: \(CFAbsoluteTimeGetCurrent() - startTime)")
+```
 
-/* ***************************************** */
-// Run Code in Background Thread
-/* ***************************************** */
+## Run Code in Background Thread
+```Swift
 DispatchQueue.global(qos: .background).async {
   print("This is run on the background queue")
 
@@ -70,10 +66,9 @@ DispatchQueue.global(qos: .background).async {
     print("This is run on the main queue, after the previous code in outer block")
   }
 }
-
-/* ***************************************** */
-// Measure Performance (extended Version of Measure Time)
-/* ***************************************** */
+```
+## Measure Performance (extended Version of Measure Time)
+```Swift
 func measure(_ title: String, block: (() -> ()) -> ()) {
 
   let startTime = CFAbsoluteTimeGetCurrent()
@@ -83,7 +78,6 @@ func measure(_ title: String, block: (() -> ()) -> ()) {
     print("\(title):: Time: \(timeElapsed)")
   }
 }
-
 
 func demo(){
   // For asynchronous code:
@@ -100,3 +94,4 @@ func demo(){
    // Code to Teste here
  }
 }
+```
