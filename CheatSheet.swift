@@ -1,3 +1,8 @@
+// Typecast in For Loop
+for case let item as MyVar in myArray{
+    
+}
+
 // Return Multiple Value Tuple
 
 func getTime() -> (Int, Int, Int) {
