@@ -50,6 +50,15 @@ let startTime = CFAbsoluteTimeGetCurrent()
 print("Time: \(CFAbsoluteTimeGetCurrent() - startTime)")
 
 
+// Run Code in Background Thread
+DispatchQueue.global(qos: .background).async {
+    print("This is run on the background queue")
+
+    DispatchQueue.main.async {
+        print("This is run on the main queue, after the previous code in outer block")
+    }
+}
+
 
 // Measure Performance (extended Version of Measure Time)
 
