@@ -14,7 +14,6 @@ for case let item as MyVar in myArray{
 }
 
 // Return Multiple Value Tuple
-
 func getTime() -> (Int, Int, Int) {
     ...
     return ( hour, minute, second)
@@ -28,6 +27,22 @@ func getTime() -> (hour: Int, minute: Int,second: Int) {
     return ( hour, minute, second)
 }
 
+// Extended Getter and Setter
+class family {
+  var _members:Int = 2
+  var members:Int {
+   get {
+     return _members
+   }
+   set (newVal) {
+     if newVal >= 2 {
+       _members = newVal
+     } else {
+       println('error: cannot have family with less than 2 members')
+     }
+   }
+  }
+}
 
 // Measure Time
 let startTime = CFAbsoluteTimeGetCurrent()
