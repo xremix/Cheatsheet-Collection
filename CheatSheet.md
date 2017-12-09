@@ -1,5 +1,7 @@
 ## Debug in Live Console
-## (lldb) po [myItem.myProperty]
+```
+(lldb) po [myItem.myProperty]
+```
 
 ## Single Line If let
 ```Swift
