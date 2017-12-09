@@ -17,3 +17,9 @@ func getTime() -> (hour: Int, minute: Int,second: Int) {
     let second = 3
     return ( hour, minute, second)
 }
+
+
+// Measure Time
+let startTime = CFAbsoluteTimeGetCurrent()
+
+print("Time: \(CFAbsoluteTimeGetCurrent() - startTime)")
