@@ -23,3 +23,35 @@ func getTime() -> (hour: Int, minute: Int,second: Int) {
 let startTime = CFAbsoluteTimeGetCurrent()
 
 print("Time: \(CFAbsoluteTimeGetCurrent() - startTime)")
+
+
+
+// Measure Performance (extended Version of Measure Time)
+
+func measure(_ title: String, block: (() -> ()) -> ()) {
+
+  let startTime = CFAbsoluteTimeGetCurrent()
+
+  block {
+    let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+    print("\(title):: Time: \(timeElapsed)")
+  }
+}
+
+
+
+func demo(){
+  // For asynchronous code:
+  measure("async test") {finish in
+    myAsyncCall {
+      finish()
+    }
+    // Code to Test here
+  }
+  // For synchronous code:
+  measure("sync test") {finish in
+   // code to benchmark
+   finish()
+   // Code to Teste here
+ }
+}
