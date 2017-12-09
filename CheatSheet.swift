@@ -1,4 +1,4 @@
-// Return Tuple
+// Return Multiple Value Tuple
 
 func getTime() -> (Int, Int, Int) {
     ...
