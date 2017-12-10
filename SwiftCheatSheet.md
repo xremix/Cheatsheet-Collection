@@ -1,5 +1,7 @@
 # Swift Cheat Sheet
 
+Cheat Sheet for iOS Development using Swift, containing a couple of code samples that are interesting to know and remember when needed. Mostly interesting are longer code samples at the bottom.
+
 ## Debug in Live Console
 ```
 (lldb) po [myItem.myProperty]
