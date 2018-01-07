@@ -189,7 +189,67 @@ SELECT LAST_INSERT_ID()
 ```
 
 ### Update
+Can also contain calculations like
+```SQL
+UPDATE grades SET grade = GREATEST(1, grade+1);
+```
 
 ### Delete
+```SQL
+DELETE FROM users WHERE id = 1;
+```
+
+To empty a table use
+```SQL
+TRUNCATE TABLE tbl_name;
+```
+
+### [Select](https://dev.mysql.com/doc/refman/5.7/en/select.html)
+The column names in an select statement are the same as π (Projection) in relational algebra.
+Where statement is equivalent ot the Selection σ.
+```SQL
+SELECT
+    [ALL | DISTINCT | DISTINCTROW ]
+      [HIGH_PRIORITY]
+      [STRAIGHT_JOIN]
+      [SQL_SMALL_RESULT] [SQL_BIG_RESULT] [SQL_BUFFER_RESULT]
+      [SQL_CACHE | SQL_NO_CACHE] [SQL_CALC_FOUND_ROWS]
+    select_expr [, select_expr ...]
+    [FROM table_references
+      [PARTITION partition_list]
+    [WHERE where_condition]
+    [GROUP BY {col_name | expr | position}
+      [ASC | DESC], ... [WITH ROLLUP]]
+    [HAVING where_condition]
+    [ORDER BY {col_name | expr | position}
+      [ASC | DESC], ...]
+    [LIMIT {[offset,] row_count | row_count OFFSET offset}]
+    [PROCEDURE procedure_name(argument_list)]
+    [INTO OUTFILE 'file_name'
+        [CHARACTER SET charset_name]
+        export_options
+      | INTO DUMPFILE 'file_name'
+      | INTO var_name [, var_name]]
+    [FOR UPDATE | LOCK IN SHARE MODE]]
+```
+
+Sample
+```SQL
+SELECT * FROM tbl_name WHERE id % 10 = 0;
+
+SELECT * FROM tbl_name WHERE name LIKE('Pete%');
+# or
+SELECT * FROM tbl_name WHERE name LIKE 'Pete%';
+# or
+SELECT * FROM tbl_name WHERE LOWER(name) LIKE 'pete%';
+```
+
+Sample for Timestamp
+```SQL
+SELECT * FROM users WHERE timestampdiff(YEAR, birthdate, NOW()) < 18
+
+SELECT timestampdiff(YEAR, birthdate, NOW()) as age FROM users
+```
+
 
 ### Select
