@@ -1,9 +1,9 @@
 # Mongo DB Cheat Sheet
 
-## Notes and others
+## References
 
-- [elegant mongodb object modeling for node.js](http://mongoosejs.com)
 - [Cheat Sheet](https://blog.codecentric.de/files/2012/12/MongoDB-CheatSheet-v1_0.pdf)
+- [mongoose - elegant mongodb object modeling for node.js](http://mongoosejs.com)
 
 ## DB
 
