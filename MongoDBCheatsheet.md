@@ -7,22 +7,22 @@
 
 ## DB
 
-```JS
+```javascript
 use mydb
 db.users.drop();
 ```
 ## CRUDs
 
 ### Insert
-```JS
+```javascript
 db.runCommand(
 {
 	insert: "users",
 	documents: [ { _id: 2, user: "thoffmann", lastloggedin: null, logins: ["today", "yesterday"] } ]
 })
 ```
-### Find / Select
-```JS
+### Find
+```javascript
 db.runCommand({
 	find: "users"
 })
@@ -37,19 +37,41 @@ db.users.find({
 	]
 })
 
+// Only show Name
+db.users.find({}, {name:true, _id:false})
 ```
+
+#### Find Operators
+```javascript
+**$gt / $gte** greater than
+**$lt / $lte** lesser than
+**$exists** does an attribute exist or not
+**$regex** Regex
+**$type** search by type
+```
+
 ### Update
-```JS
+```javascript
 db.runCommand({
 	update: "users",
 	updates: [{q: {user: "thoffmann"}, u: {lastloggedin: true}}]
 })
 ```
 ### Delete
-```JS
+```javascript
 db.runCommand({
 	delete: "users",
 	deletes: [ { q: { user: "thoffmann" }, limit: 1 } ]
 
 })
 ```
+
+## Indexes
+```javascript
+db.users.ensureIndex({name : 1})
+```
+
+## Replica Sets
+
+## Sharding
+Method of database partitioning
