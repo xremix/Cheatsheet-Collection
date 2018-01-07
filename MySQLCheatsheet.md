@@ -156,6 +156,14 @@ Numerous Datatypes can do comparison pretty quick, so the whole value is an Inde
 On Char-based datatypes the system needs to compare char by char. The longer the search query, the slower the search.
 To check the relevance of a index the indexselectivity is used.
 
+### Foreign Key
+
+Add Foreign Key
+```SQL
+ALTER TABLE tbl_name
+	ADD FOREIGN KEY column_name
+	REFERENCES tbl_name2 column_name2
+
 ## SQL Dump
 Create Dump File
 ```sh

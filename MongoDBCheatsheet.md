@@ -42,6 +42,7 @@ db.users.find({}, {name:true, _id:false})
 ```
 
 #### Find Operators
+All operator or keywords do start with `$`
 ```javascript
 **$gt / $gte** greater than
 **$lt / $lte** lesser than
