@@ -183,6 +183,11 @@ VALUES ('a', 'b', 'user1'),
 ('c', 'd', 'user2');
 ```
 
+Recieve AUTO_INCREMENT id form last inserted data
+```SQL
+SELECT LAST_INSERT_ID()
+```
+
 ### Update
 
 ### Delete
