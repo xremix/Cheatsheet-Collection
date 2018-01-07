@@ -251,8 +251,10 @@ SELECT * FROM users WHERE timestampdiff(YEAR, birthdate, NOW()) < 18
 SELECT timestampdiff(YEAR, birthdate, NOW()) as age FROM users
 ```
 
+#### Distinct
 
-### Select### Sort
+
+### Sort
 Equals τ (Sort) in relational algebra
 
 ### LIMIT
@@ -286,3 +288,26 @@ To aggregate everything its possible to have an always true group by (which does
 SELECT COUNT(*) FROM events
 WHERE users >100 GROUP BY 1=1;
 ```
+
+## NULL
+SELECT * FROM users WHERE lastloggedin IS NOT NULL
+
+## JOIN
+INNER JOIN = JOIN // In linear algebra the Inner Join is equal to subset of the Cartesian product if foreign key and primary key match together
+LEFT OUTER JOIN = LEFT JOIN
+RIGHT OUTER JOIN = RIGHT JOIN
+FULL OUTER JOIN = FULL OUTER JOIN
+
+If primary key and foreign key are equiavalent:
+```SQL
+SELECT * FROM tbl_name
+  INNER JOIN tbl_name2 USING column_name
+```
+
+If there are no other equivalent columns its possible to do a **NATURAL JOIN**
+```
+SELECT * FROM tbl_name
+  NATURAL JOIN tbl_name2
+```
+
+**FULL OUTER JOIN** is equal to a UNION of LEFT JOIN and RIGHT JOIN
