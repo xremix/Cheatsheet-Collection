@@ -252,4 +252,37 @@ SELECT timestampdiff(YEAR, birthdate, NOW()) as age FROM users
 ```
 
 
-### Select
+### Select### Sort
+Equals τ (Sort) in relational algebra
+
+### LIMIT
+```SQL
+SELECT * FROM tbl_name LIMIT 10;
+# Paging (startpoint, limit)
+SELECT * FROM tbl_name LIMIT 70, 10;
+```
+
+## [Grouping](https://dev.mysql.com/doc/refman/5.7/en/group-by-functions-and-modifiers.html)
+
+**Basic Aggregation functions**
+- AVG(x)
+- COUNT(x)
+- COUNT(DISTINCT x)
+- SUM(x)
+- MIN(x)
+- MAX(x)
+
+**Sample**
+```SQL
+SELECT city, COUNT(*) AS citizen
+FROM users
+GROUP BY city
+HAVING citizen > 10
+ORDER BY citizen DESC;
+```
+
+To aggregate everything its possible to have an always true group by (which doesn't make sense in this sample):
+```SQL
+SELECT COUNT(*) FROM events
+WHERE users >100 GROUP BY 1=1;
+```
