@@ -101,3 +101,13 @@ func demo(){
  }
 }
 ```
+
+## Array Map
+Map an Array of objects
+
+```Swift
+users = users.map { (var user: User) -> User in
+    user.loggedIn = false
+    return user
+}
+```
