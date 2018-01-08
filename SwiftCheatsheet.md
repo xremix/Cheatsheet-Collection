@@ -111,4 +111,6 @@ users = users.map { (user: User) -> User in
     mutableUser.loggedIn = false
     return mutableUser
 }
+// Or as an alternative
+users = self.users.map{return $0}
 ```
