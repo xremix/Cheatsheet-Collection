@@ -106,8 +106,9 @@ func demo(){
 Map an Array of objects
 
 ```Swift
-users = users.map { (var user: User) -> User in
-    user.loggedIn = false
-    return user
+users = users.map { (user: User) -> User in
+    var mutableUser = user
+    mutableUser.loggedIn = false
+    return mutableUser
 }
 ```
