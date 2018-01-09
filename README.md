@@ -13,3 +13,5 @@ Many things might be obvious, but might be useful for newbies, so I'm still shar
 - [MongoDB](/MongoDBCheatsheet.md)
 - [MySQL](/MySQLCheatsheet.md)
 - [Swift](/SwiftCheatsheet.md)
+
+![Analytics](https://ga-beacon.appspot.com/UA-40522413-9/Cheatsheet-Collection/readme?pixel)
