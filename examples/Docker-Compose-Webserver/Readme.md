@@ -1,0 +1,2 @@
+- Run `docker-compose up`
+- [Visit localhost:8080](http://localhost:8080/)
