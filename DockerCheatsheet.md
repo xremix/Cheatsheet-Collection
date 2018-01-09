@@ -88,6 +88,9 @@ docker rmi -f $(docker images | grep "<none>" | awk "{print \$3}")
 ## Docker Compose
 Having a docker-compose.yml can help just having one command for Build / Run / Start and have similar environments accross development maschines.
 
+Also check out the full working [Docker Compose Web Sample](https://github.com/xremix/Cheatsheet-Collection/tree/master/examples/Docker-Compose-Webserver)
+
+
 Sample `docker-compose.yml`
 ```yml
 version: '3'
