@@ -1,6 +1,27 @@
 # MySQL Cheatsheet
 Just a couple of citations of the MySQL API Docs, to summarize basic commands and additional parameters.
 
+## Index
+
+- [Index](Index)
+- [Useful links](Useful-links)
+- [Create Database](Create-Database)
+- [Show Database](Show-Database)
+- [Create Table](Create-Table)
+- [Data Types](Data-Types)
+- [Indexes](Indexes)
+- [SQL Dump](SQL-Dump)
+- [CRUD](CRUD)
+- [Grouping](Grouping)
+- [NULL](NULL)
+- [JOIN](JOIN)
+
+
+## Useful Ressources
+
+- [SQL Syntax Check Validator](https://www.eversql.com/sql-syntax-check-validator/)
+- [SQL Fiddle](http://sqlfiddle.com) online editor and test suite
+
 ## Create Database
 ```SQL
 CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] db_name
