@@ -14,6 +14,15 @@ if let count = getCount(){
 }
 return 0
 ``` 
+## Multiline String
+```Swift
+    let multilineString = """
+      Line No 1
+      Line No 2
+    """
+```
+
+
 ## Typecast in For Loop
 ```Swift
 for case let item as MyVar in myArray{
