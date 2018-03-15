@@ -56,6 +56,14 @@ class family {
 }
 ```
 
+## Animate View
+```Swift
+UIView.animate(withDuration: 0.2, animations: {myView.backgroundColor = UIColor.red})
+// or
+UIView.animate(withDuration: 0.2, animations: {myView.backgroundColor = UIColor.red}, completion: { success in
+})
+```
+
 ## Measure Time
 ```Swift
 let startTime = CFAbsoluteTimeGetCurrent()
