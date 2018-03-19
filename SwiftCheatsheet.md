@@ -90,6 +90,13 @@ DispatchQueue.global(qos: .background).async {
   }
 }
 ```
+
+## Run Code with Delay
+```Swift
+DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+})
+```
+
 ## Measure Performance (extended Version of Measure Time)
 ```Swift
 func measure(_ title: String, block: (() -> ()) -> ()) {
