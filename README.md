@@ -9,6 +9,7 @@ Many things might be obvious, but might be useful for newbies, so I'm still shar
 - [C#](/CSharpCheatsheet.md)
 - [Docker](/DockerCheatsheet.md)
 - [Golang](/GolangCheatsheet.md)
+- [Git](/Git.md)
 - [Modern JavaScript *(External Repository)*](https://github.com/xremix/JS-Cheatsheet)
 - [MongoDB](/MongoDBCheatsheet.md)
 - [MySQL](/MySQLCheatsheet.md)
