@@ -8,8 +8,8 @@ Many things might be obvious, but might be useful for newbies, so I'm still shar
 
 - [C#](/CSharpCheatsheet.md) - List of interesting ressources
 - [Docker](/DockerCheatsheet.md) - List of basic commands, sample files and handy scripts
-- [Golang](/GolangCheatsheet.md)
-- [Git](/Git.md) - List of interesting ressources
+- [Golang](/GolangCheatsheet.md) - List of interesting ressources
+- [Git](/Git.md) - handy commands
 - [Modern JavaScript *(different repo)*](https://github.com/xremix/JS-Cheatsheet) - Code snippets arround modern JS, ES6, etc.,
 - [MongoDB](/MongoDBCheatsheet.md) - basic commands
 - [MySQL](/MySQLCheatsheet.md) - big list of basic commands and large documentation
