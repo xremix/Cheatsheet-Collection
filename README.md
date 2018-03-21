@@ -6,13 +6,13 @@ Many things might be obvious, but might be useful for newbies, so I'm still shar
 
 ## Index
 
-- [C#](/CSharpCheatsheet.md)
-- [Docker](/DockerCheatsheet.md)
+- [C#](/CSharpCheatsheet.md) - List of interesting ressources
+- [Docker](/DockerCheatsheet.md) - List of basic commands, sample files and handy scripts
 - [Golang](/GolangCheatsheet.md)
-- [Git](/Git.md)
-- [Modern JavaScript *(External Repository)*](https://github.com/xremix/JS-Cheatsheet)
-- [MongoDB](/MongoDBCheatsheet.md)
-- [MySQL](/MySQLCheatsheet.md)
-- [Swift](/SwiftCheatsheet.md)
+- [Git](/Git.md) - List of interesting ressources
+- [Modern JavaScript *(different repo)*](https://github.com/xremix/JS-Cheatsheet) - Code snippets arround modern JS, ES6, etc.,
+- [MongoDB](/MongoDBCheatsheet.md) - basic commands
+- [MySQL](/MySQLCheatsheet.md) - big list of basic commands and large documentation
+- [Swift](/SwiftCheatsheet.md)- mostly handy code snippets
 
 ![Analytics](https://ga-beacon.appspot.com/UA-40522413-9/Cheatsheet-Collection/readme?pixel)

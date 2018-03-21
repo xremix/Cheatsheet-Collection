@@ -1,6 +1,7 @@
 # Docker Cheatsheet
 
 ## Commands
+A list of all the basic commands, regulary needed for Docker
 
 ### Sample Docker file
 ```Docker
