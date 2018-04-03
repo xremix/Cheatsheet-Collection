@@ -73,6 +73,28 @@ UIView.animate(withDuration: 0.2, animations: {myView.backgroundColor = UIColor.
 })
 ```
 
+## Human Readable Time Interval
+```Swift
+class HumanTimeInterval{
+    // inspired by https://gist.github.com/skreutzberger/9122ac3683f3354a7e24
+    static func relativeDateInterval(date: Date) -> String? {
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .abbreviated
+        formatter.includesApproximationPhrase = false
+        formatter.includesTimeRemainingPhrase = false
+        formatter.allowedUnits = [.year, .month, .weekOfMonth, .day, .hour, .minute, .second]
+        formatter.maximumUnitCount = 2
+        
+        return formatter.string(from: date, to: Date())
+    }
+}
+
+
+//////////////
+// Example
+let str = HumanTimeInterval.relativeDateInterval(date: Date(timeIntervalSince1970: 1522754818))
+```
+
 ## Measure Time
 ```Swift
 let startTime = CFAbsoluteTimeGetCurrent()
