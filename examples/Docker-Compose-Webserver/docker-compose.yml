@@ -6,3 +6,4 @@ services:
       - "8080:80"
     volumes:
       - ./:/usr/local/apache2/htdocs/
+    # command: bash -c "while true; do echo hello; sleep 2; done" # keeps a container running
