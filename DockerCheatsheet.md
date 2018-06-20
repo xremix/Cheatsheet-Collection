@@ -86,6 +86,15 @@ docker rmi -f $(docker images | grep "<none>" | awk "{print \$3}")
 # Kill containers and remove them:
 ```
 
+## Clear up all disk space
+
+```SH
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+docker volume rm $(docker volume ls |awk '{print $2}')
+rm -rf ~/Library/Containers/com.docker.docker/Data/*
+```
+
 ## Docker Compose
 Having a docker-compose.yml can help just having one command for Build / Run / Start and have similar environments accross development maschines.
 
@@ -107,3 +116,5 @@ services:
 # Image / Build / Run / Start
 docker-compose up
 ```
+
+
