@@ -1,4 +1,11 @@
-# Docker Cheatsheet
+# Git Cheatsheet
+
+## Remove files that have been added to the `.gitignore`
+
+```
+git rm -r --cached .
+git add .
+```
 
 ## Update a Fork
 
