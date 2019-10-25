@@ -15,14 +15,21 @@ To merge the fork origin upstream in the current repo
 git fetch upstream
 git checkout master
 git merge upstream/master
-``
+```
 
 ### Setup upstream
-fatal: 'upstream' does not appear to be a git repository
+fatal: `upstream` does not appear to be a git repository
 
-````
+```sh
 git remote -v
 git remote add upstream https://github.com/[user]/[rep]
-```sh
+```
 
 Then rerun the commands above
+
+## Undo all local changes
+
+```sh
+git reset --hard
+git clean -fd
+```
