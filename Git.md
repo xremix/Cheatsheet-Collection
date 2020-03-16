@@ -33,3 +33,11 @@ Then rerun the commands above
 git reset --hard
 git clean -fd
 ```
+
+
+## Delete all local branches (clean up)
+```sh
+git branch --merged | grep -v \* | xargs git branch -D 
+```
+
+This will delete all local branches that are listed via `git branch --merged`
