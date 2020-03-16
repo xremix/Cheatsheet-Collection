@@ -37,6 +37,7 @@ git clean -fd
 
 ## Delete all local branches (clean up)
 ```sh
+git checkout master
 git branch --merged | grep -v \* | xargs git branch -D 
 ```
 
