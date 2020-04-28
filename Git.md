@@ -34,6 +34,11 @@ git reset --hard
 git clean -fd
 ```
 
+## Delete branch locally and remote
+```sh
+git branch -d branch_name
+$ git push origin --delete <branch_name>
+```
 
 ## Delete all local branches (clean up)
 ```sh
