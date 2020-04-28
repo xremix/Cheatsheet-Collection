@@ -36,8 +36,8 @@ git clean -fd
 
 ## Delete branch locally and remote
 ```sh
-git branch -d branch_name
-$ git push origin --delete <branch_name>
+git branch -d [branch_name] # delete locally
+git push origin --delete [branch_name] # delete remote
 ```
 
 ## Delete all local branches (clean up)
@@ -47,3 +47,10 @@ git branch --merged | grep -v \* | xargs git branch -D
 ```
 
 This will delete all local branches that are listed via `git branch --merged`
+
+
+## Merge single commits
+
+```sh
+git cherry-pick [commit]
+```
