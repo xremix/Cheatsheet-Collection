@@ -54,3 +54,14 @@ This will delete all local branches that are listed via `git branch --merged`
 ```sh
 git cherry-pick [commit]
 ```
+
+
+## Contributers
+
+Get the commits per contibutors per month
+
+```git log --pretty="%ad %an" --date=format:"%Y-%m" | sort | uniq -c | awk '{print $2, $3, $1}'```
+
+Get teh total commits per contributor
+
+```git log --pretty=format:'%an %ad' --date=format:'%Y-%m' | awk '{print $1, $2}' | sort | uniq -c | awk '{print $2, $3, $1}'```
