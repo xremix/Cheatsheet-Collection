@@ -58,6 +58,10 @@ git cherry-pick [commit]
 
 ## Contributers
 
+Commits per month
+
+```git log --date=format:"%Y-%m" --format="%ad" | sort | uniq -c | awk '{print $2, $1}'```
+
 Get the commits per contibutors per month
 
 ```git log --pretty="%ad %an" --date=format:"%Y-%m" | sort | uniq -c | awk '{print $2, $3, $1}'```
